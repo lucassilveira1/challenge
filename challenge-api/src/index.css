@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.success {
+  background-color: rgb(88, 230, 88);
+  border-radius: 5px;
+  padding: 10px 8px;
+}
+
+.validate {
+  background-color: rgb(230, 93, 88);
+  border-radius: 5px;
+  padding: 10px 8px;
+}
