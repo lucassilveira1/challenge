@@ -74,67 +74,67 @@ const Insert = () => {
     <div className="container">
       <Link1 to="/">Voltar</Link1>
       <h1>Adicione um álbum ou disco!</h1>
-    <div className="form">
-      <form className="insert">
-        <div className="input">
-          <label>Artista</label>
-          <input
-            type="text"
-            placeholder="Nome do Artista ou Banda."
-            value={artist}
-            onChange={(e) => setArtist(e.target.value)}
-            required
-          />
-        </div>
-        <div className="input">
-          <label>Gênero</label>
-          <input
-            type="text"
-            placeholder="Ex.: Rock || Pop || Indie."
-            value={gender}
-            onChange={(e) => setGender(e.target.value)}
-            required
-          />
-        </div>
-        <div className="input">
-          <label>Nome do Disco</label>
-          <input
-            type="text"
-            placeholder="Nome do Disco ou Álbum."
-            value={album}
-            onChange={(e) => setAlbum(e.target.value)}
-            required
-          />
-        </div>
+      <div className="form">
+        <form className="insert">
+          <div className="input">
+            <label>Artista</label>
+            <input
+              type="text"
+              placeholder="Nome do Artista ou Banda."
+              value={artist}
+              onChange={(e) => setArtist(e.target.value)}
+              required
+            />
+          </div>
+          <div className="input">
+            <label>Gênero</label>
+            <input
+              type="text"
+              placeholder="Ex.: Rock || Pop || Indie."
+              value={gender}
+              onChange={(e) => setGender(e.target.value)}
+              required
+            />
+          </div>
+          <div className="input">
+            <label>Nome do Disco</label>
+            <input
+              type="text"
+              placeholder="Nome do Disco ou Álbum."
+              value={album}
+              onChange={(e) => setAlbum(e.target.value)}
+              required
+            />
+          </div>
 
-        <div className="input">
-          <label>Lançamento do Disco</label>
-          <input
-            type="date"
-            placeholder="Ex.: 24/10/2000"
-            value={launch}
-            onChange={(e) => setLaunch(e.target.value)}
-            required
-          />
-        </div>
-        {validate && (
-          <p className="validate">Os campos não podem estar vazios.</p>
-        )}
-        {paragraph && <p className="success">Enviado com sucesso.</p>}
+          <div className="input">
+            <label>Lançamento do Disco</label>
+            <input
+              type="date"
+              placeholder="Ex.: 24/10/2000"
+              value={launch}
+              onChange={(e) => setLaunch(e.target.value)}
+              required
+            />
+          </div>
+          {validate && (
+            <p className="validate">Os campos não podem estar vazios.</p>
+          )}
+          {paragraph && <p className="success">Enviado com sucesso.</p>}
 
-        <input
-          className="submit"
-          type="submit"
-          value="Enviar"
-          onClick={handleSubmit}
-        />
-        <input
-          className="reset"
-          type="reset"
-          value="Limpar"
-          onClick={handleReset}
-        />
-      </form>
+          <input
+            className="submit"
+            type="submit"
+            value="Enviar"
+            onClick={handleSubmit}
+          />
+          <input
+            className="reset"
+            type="reset"
+            value="Limpar"
+            onClick={handleReset}
+          />
+        </form>
       </div>
     </div>
   );

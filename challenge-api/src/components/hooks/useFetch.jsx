@@ -3,14 +3,18 @@ import { useState, useEffect } from "react";
 export const useFetch = (url) => {
   const [data, setData] = useState(null);
 
-  // data rescue
+  // getting data from db;
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(url);
+      try {
+        const res = await fetch(url);
 
-      const json = await res.json();
+        const json = await res.json();
 
-      setData(json);
+        setData(json);
+      } catch (error) {
+        console.log(error);
+      }
     };
 
     fetchData();
@@ -23,15 +27,13 @@ export const useFetch = (url) => {
         method: "DELETE",
       });
 
+      // Updating data array if res was complete with success
       if (res.ok) {
-        // Se a exclusão foi bem-sucedida, atualize os dados
         const updatedData = data.filter((item) => item.id !== id);
         setData(updatedData);
-      } else {
-        console.error("Erro ao deletar:", res.statusText);
       }
     } catch (error) {
-      console.error("Erro na requisição de exclusão:", error);
+      console.error("Erro ao excluir:", error);
     }
   };
 
