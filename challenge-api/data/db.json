@@ -1,11 +1,3 @@
 {
-  "discos": [
-    {
-      "artist": "Linkin Park",
-      "gender": "Rock",
-      "album": "Meteora",
-      "launch": "2003-03-23",
-      "id": 1
-    }
-  ]
+  "discos": []
 }

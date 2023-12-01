@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
 import "./Show.css";
 import { Link } from "react-router-dom";
-// styles import
-import styled from 'styled-components';
+import styled from "styled-components";
 // hooks
 import { useState } from "react";
 import { useFetch } from "../hooks/useFetch";
@@ -16,14 +15,15 @@ export const Link1 = styled(Link)`
   background-color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
-  box-shadow: 0px 6px 8px rgba(25, 50, 47, 0.09),0px 3px 4px rgba(18, 71, 52, 0.08), 0px 1px 16px rgba(18, 71, 52, 0.03);
+  box-shadow: 0px 6px 8px rgba(25, 50, 47, 0.09),
+    0px 3px 4px rgba(18, 71, 52, 0.08), 0px 1px 16px rgba(18, 71, 52, 0.03);
   font-size: 15px;
 
   &:hover {
     background-color: #07c2dc;
     transition: 0.3s;
   }
-`
+`;
 const Show = () => {
   // custom hook
   const { data: discos, deleteById } = useFetch(url);
