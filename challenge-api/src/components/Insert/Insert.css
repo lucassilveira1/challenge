@@ -3,13 +3,23 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  background: #aaa;
   margin: 0;
   padding: 0;
+}
+
+.form {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 .insert {
   flex-direction: column;
   display: flex;
+  width: 100%;
 }
 
 .input {
@@ -19,10 +29,10 @@ body {
 
 .input input {
   /* background-color: #3b3b3b; */
-  background-color: #cecccc;
+  background-color: #e4e0e0;
   color: #000;
-  border: 1px solid #555;
-  border-radius: 2px;
+  border: none;
+  border-bottom: 2px solid;
   padding: 10px 8px;
   outline: none;
   margin-bottom: 0.6em;

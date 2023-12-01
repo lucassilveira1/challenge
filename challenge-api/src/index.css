@@ -10,6 +10,15 @@ code {
     monospace;
 }
 
+.container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 30px;
+}
+
 .success {
   background-color: rgb(88, 230, 88);
   border-radius: 5px;

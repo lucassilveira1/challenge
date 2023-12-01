@@ -6,6 +6,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 th,
@@ -13,6 +14,10 @@ td {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 12px;
+}
+
+td {
+  background: #fff;
 }
 
 th {

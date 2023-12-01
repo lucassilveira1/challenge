@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
 import "./Insert.css";
-
-import { Link } from "react-router-dom";
-
+// styles
+import { Link1 } from "../Show/Show";
 // hooks
 import { useState } from "react";
 
@@ -72,10 +71,10 @@ const Insert = () => {
     setLaunch("");
   };
   return (
-    <div>
-      <Link to="/">Voltar</Link>
+    <div className="container">
+      <Link1 to="/">Voltar</Link1>
       <h1>Adicione um álbum ou disco!</h1>
-
+    <div className="form">
       <form className="insert">
         <div className="input">
           <label>Artista</label>
@@ -136,6 +135,7 @@ const Insert = () => {
           onClick={handleReset}
         />
       </form>
+      </div>
     </div>
   );
 };
